@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="card">
+        <div class="upper-part">
+            <div>
+                <img src="./images/chip.png" alt="">
+            </div>
+            <div>
+                <img src="./images/visa.png" alt="">
+            </div>
+        </div>
+
+        <div>
+            <p class="card_uuid">
+                <span class="num_ui">0000</span> -
+                <span class="num_ui">0000</span> -
+                <span class="num_ui">0000</span> -
+                <span class="num_ui">0000</span>
+            </p>
+        </div>
+
+        <div class="lower-part">
+            <div>
+                <p>Card Holder</p>
+                <div></div>
+            </div>
+            <div>
+                <p>Expires</p>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-details-div">
+        <form action="" class="card_form">
+            <div class="card-detail">
+                <label for="card-number">CARD NUMBER</label>
+                <div class="card-number">
+                    <input
+                        name="first"
+                        data-cardtype="check"
+                        class="card_num"
+                        type="text"
+                        required
+                        maxlength="4" 
+                    >
+                    <input
+                        required
+                        type="text"
+                        class="card_num"
+                        maxlength="4" 
+                    >
+                    <input
+                        required
+                        type="text"
+                        class="card_num"
+                        maxlength="4" 
+                    >
+                    <input
+                        type="text"
+                        required
+                        class="card_num"
+                        maxlength="4" 
+                    >
+                </div>
+            </div>
+    
+            <div class="card-detail">
+                <label for="card-holder">CARD HOLDER</label>
+                <input 
+                    type="text"
+                    required 
+                    class="card-holder holderName"
+                >
+            </div>
+            
+            <div class="last-col">
+                <div class="expiry-date-div">
+                    <label for="expiration-date">EXPIRATION DATE</label>
+                    <div class="expiry-date">
+                        <select name="month" id="" class="month" required>
+                            <option 
+                                value="03"
+                                disabled
+                                selected
+                            >
+                                Month
+                            </option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="year" id="" class="year" required>
+                            <option 
+                                value="2001"
+                                disabled
+                                selected
+                            >
+                                Year
+                            </option>
+                                <option value="2023">2023</option>
+								<option value="2024">2024</option>
+								<option value="2025">2025</option>
+								<option value="2026">2026</option>
+								<option value="2027">2027</option>
+								<option value="2028">2028</option>
+								<option value="2029">2029</option>
+								<option value="2030">2030</option>
+								<option value="2031">2031</option>
+								<option value="2032">2032</option>
+								<option value="2033">2033</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="cvv-div">
+                    <label for="cvv" class="cvv-label">CVV</label>
+                    <input 
+                        type="text"
+                        required
+                        maxlength="3"
+                        class="cvv"
+                    >
+                </div>
+            </div>
+
+            <button id="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

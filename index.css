@@ -1,0 +1,120 @@
+body {
+    background-image: linear-gradient(to top right, #d2cfa5, #bbdac5);
+    padding: 20px 10px 8px 5px;
+}
+
+.card {
+    transform: translateY(150px);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 20px 50px;
+    border-radius: 10px;
+    background-color: #8e485c;
+}
+
+.upper-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.lower-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card-details-div {
+    width: 90%;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-detail {
+    width: 90%;
+    margin-right: auto;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+input, select {
+    margin-top: 5px;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px inset;
+}
+
+.card-holder {
+    width: 98%;
+}
+
+.last-col {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.card-number, .expiry-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cvv-div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+}
+
+.cvv-div input {
+    width: 90%;
+}
+
+.month, .year, .cvv {
+    width: 60%;
+    box-shadow: 2px inset;
+}
+
+.month {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    border-radius: 5px;
+    box-shadow: inset;
+    align-self: center;
+    width: 90%;
+    margin: 15px 0px;
+    padding: 10px 0px;
+    background-color: #3f8993;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 50%;
+    }
+
+    .card-details-div {
+        width: 60%;
+    }
+}
