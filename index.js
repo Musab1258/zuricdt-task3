@@ -125,16 +125,14 @@ function cardNumbers() {
 		
 
 		if (expiration < currentDate) {
-			alert(`Your Card is expired 🙅‍♂️👎📛
+			alert(`Your Card is expired
 			Please update your card.
 
 			Thank you.
 			`);
 			return;
 		} else {
-			alert(`💰💸💸💰
-			Your payment was successful
-			💰💸💸💰`);
+			alert(`Your payment was successful`);
 		}
 	});
 }
