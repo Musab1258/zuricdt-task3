@@ -30,14 +30,14 @@ function cardNumbers() {
 		cardUiNumber = getDOM_elements("all", ".num_ui"),
 		holderNamer = getDOM_elements("one", ".holderName"),
 		holderUI = getDOM_elements("one", ".holderUI"),
-		ccvNumber = getDOM_elements("one", ".ccvNumber"),
-		ccvUI = getDOM_elements("one", ".ccv_ui"),
+		cvv = getDOM_elements("one", ".cvv"),
+		ccvUI = getDOM_elements("one", ".card_cvv"),
 		image = getDOM_elements("one", ".cardType"),
-		expDate = getDOM_elements("one", ".exp_date_month"),
-		expYear = getDOM_elements("one", ".exp_date_year"),
-		form = getDOM_elements("one", ".card_form"),
-		uiEpmonth = getDOM_elements("one", ".exp_uidate"),
-		uiEpyear = getDOM_elements("one", ".exp_uiyear");
+		expDate = getDOM_elements("one", ".month"),
+		expYear = getDOM_elements("one", ".year"),
+		form = getDOM_elements("one", ".form"),
+		uiEpmonth = getDOM_elements("one", ".card_exp_month"),
+		uiEpyear = getDOM_elements("one", ".card_exp_year");
 
 	cardNumber.forEach((fourDigit, index) => {
 		fourDigit.addEventListener("focusout", (e) => {
@@ -97,7 +97,7 @@ function cardNumbers() {
 		holderUI.textContent = `${firstANDlastNames[0]} ${firstANDlastNames[1]}`;
 	});
 
-	ccvNumber.addEventListener("focusout", (e) => {
+	cvv.addEventListener("focusout", (e) => {
 		const current = e.target;
 		if (current.value.length < 3) {
 			ccvUI.textContent = "000";

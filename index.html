@@ -13,7 +13,7 @@
                 <img src="./images/chip.png" alt="">
             </div>
             <div>
-                <img src="./images/visa.png" alt="">
+                <img src="./images/visa.png" class="cardType" alt="A visa logo">
             </div>
         </div>
 
@@ -26,6 +26,10 @@
             </p>
         </div>
 
+        <div>
+            <p class="sub-text holderUI">Holder First and Last Name</p>
+        </div>
+
         <div class="lower-part">
             <div>
                 <p>Card Holder</p>
@@ -33,13 +37,21 @@
             </div>
             <div>
                 <p>Expires</p>
-                <div></div>
+                <p class="sub-text">
+                    <span class="card_exp_month">00</span>/<span class="card_exp_year"
+                        >00</span
+                    >
+                </p>
             </div>
+        </div>
+
+        <div>
+            <p class="card_cvv">000</p>
         </div>
     </div>
 
     <div class="card-details-div">
-        <form action="" class="card_form">
+        <form action="" class="form">
             <div class="card-detail">
                 <label for="card-number">CARD NUMBER</label>
                 <div class="card-number">
